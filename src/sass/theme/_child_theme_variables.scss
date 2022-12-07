@@ -6,6 +6,7 @@
   font-family: 'Gill Sans';
   src: url('../fonts/Gill Sans.otf') format('opentype');
 }
+
 @font-face {
   font-weight: bold;
   font-family: 'Gill Sans Bold';
@@ -13,6 +14,8 @@
 }
 
 $blue: #005289; // Thats a sample how you could change a BootStrap variable.
+$green: #3FBEAC;
 $primary: $blue; // Once we've changed the value, we'll also make it the primary brand color.
+$success: $green;
 
 $font-family-sans-serif: 'Gill Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

@@ -1,37 +1,9 @@
-header.entry-header {
-  .header-hidden {
-    visibility: hidden;
+:where(.wp-block-columns.is-layout-flex) {
+  gap: 0;
+}
 
-    img {
-      width: calc(100% - 363px);
-    }
-
-  }
-
-  .header-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-
-    .header-container {
-      position: relative;
-
-      img {
-        width: 100vw;
-        height: auto;
-      }
-
-      .entry-title {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        text-align: center;
-      }
-    }
-  }
+.wrapper {
+  padding-bottom: 0;
 }
 
 figure, figure.wp-block-image img,
@@ -54,44 +26,143 @@ h2, .h2 {
   }
 }
 
-ul {
-  list-style: none; /* Remove default bullets */
-  li::before {
-    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: blue; /* Change the color */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 6px; /* Also needed for space (tweak if needed) */
-    margin-left: -6px; /* Also needed for space (tweak if needed) */
-  }
+h4, .h4 {
+  color: #005289;
+  font-size: 25px;
+  margin-bottom: 2rem;
 }
 
+input {
+  border: 0;
+  margin-bottom: 9.5px;
+  padding: 13px 15px;
+  font-size: 21px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #005289;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .bg-grey {
   background-color: #F8F8F8;
 }
 
-.wp-block-image img {
+nav#main-nav {
+  z-index: 15;
+  margin: 28.5px 50px;
+
+  .navbar-brand {
+    width: 162px;
+    margin-right: 55px;
+  }
+
+  .navbar-nav {
+    font-size: 21px;
+
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .nav-link {
+      color: #242424;
+
+      &:focus,
+      &:hover {
+        color: #3FBEAC;
+      }
+    }
+
+    .active {
+      .nav-link {
+        color: #3FBEAC;
+      }
+    }
+
+  }
+}
+
+header.entry-header {
+  .header-hidden {
+    visibility: hidden;
+
+    img {
+      width: calc(100% - 676px);
+    }
+
+  }
+
+  .header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+
+    .header-container {
+      position: relative;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+
+      .entry-title {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+.site-main .wp-block-image img {
   width: 100%;
 }
+
 .wpcf7 {
   max-width: 66.6% !important;
   margin: 0 auto;
 }
+
 .ayh-text-block {
-  h2, p, ul{
+  h2, p, ul {
     max-width: 66.6%;
     margin: 0 auto;
   }
-  h2{
+
+  h2 {
     margin: 0 auto 39px;
   }
-  .wp-block-column{
+
+  .wp-block-column {
     max-width: 66.6%;
     margin: 0 auto;
-    p{
+
+    p {
       max-width: unset;
     }
   }
+
+  ul {
+    list-style: none; /* Remove default bullets */
+    li::before {
+      content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: blue; /* Change the color */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 6px; /* Also needed for space (tweak if needed) */
+      margin-left: -6px; /* Also needed for space (tweak if needed) */
+    }
+  }
+
 }
 
 blockquote.wp-block-quote {
@@ -101,4 +172,56 @@ blockquote.wp-block-quote {
   color: #3FBEAC;
   font-size: 32px;
   text-transform: uppercase;
+  font-family: 'Gill Sans Bold';
+}
+
+#newsletter {
+  background-color: #3FBEAC;
+  color: #fff;
+  font-size: 25px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+
+  .newsletter-wrapper {
+    width: 66.6%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .newsletter-text-big {
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Gill Sans Bold';
+    color: #fff;
+
+    span {
+      color: #005289;
+      display: block;
+    }
+  }
+
+  .newsletter-text {
+    flex: 1 0 50%;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+}
+
+#wrapper-footer-full, #wrapper-static-hero {
+  background-color: #F8F8F8;
+  color: #242424;
+}
+
+#wrapper-footer {
+  color: #fff;
+  background-color: #3FBEAC;
+}
+
+.post-35 .entry-content {
+  margin: 80px 110px;
 }
