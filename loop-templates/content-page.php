@@ -13,17 +13,12 @@ defined( 'ABSPATH' ) || exit;
 post_class(); ?> id="post-<?php
 the_ID(); ?>">
     <header class="entry-header">
-		<?php
-		//		$thumb = get_the_post_thumbnail_url();
-		//		<div class="page-header" style="background-image: url('<?php
-		//		echo $thumb; ?><!--');    background-position: center;-->
-        <!--                background-repeat: no-repeat;-->
-        <!--                background-size: cover;">-->
-		<?php
-		?>
+        <div class="header-hidden">
+			<?php
+			echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+        </div>
         <div class="header-wrapper">
             <div class="header-container">
-
                 <div class="header-image">
 					<?php
 					echo get_the_post_thumbnail( $post->ID, 'large' );

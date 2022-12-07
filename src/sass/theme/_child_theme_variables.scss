@@ -2,6 +2,17 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../fonts/Gill Sans.otf') format('opentype');
+}
+@font-face {
+  font-weight: bold;
+  font-family: 'Gill Sans Bold';
+  src: url('../fonts/Gill Sans Bold.otf') format('opentype');
+}
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+$blue: #005289; // Thats a sample how you could change a BootStrap variable.
+$primary: $blue; // Once we've changed the value, we'll also make it the primary brand color.
+
+$font-family-sans-serif: 'Gill Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

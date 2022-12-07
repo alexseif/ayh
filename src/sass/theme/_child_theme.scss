@@ -1,24 +1,104 @@
-.header_wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-
-  .header-container {
-    position: relative;
+header.entry-header {
+  .header-hidden {
+    visibility: hidden;
 
     img {
-      width: 100vw;
-      height: auto;
+      width: calc(100% - 363px);
     }
 
-    .entry-title {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      text-align: center;
+  }
+
+  .header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    .header-container {
+      position: relative;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+
+      .entry-title {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
+}
+
+figure, figure.wp-block-image img,
+.blockquote, .wp-block-quote,
+.wp-block-columns {
+  margin-bottom: 0;
+}
+
+h1, .h1,
+h2, .h2 {
+  font-family: 'Gill Sans Bold';
+  font-size: 40px;
+  color: #005289;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+
+  span {
+    color: #3FBEAC;
+    display: block;
+  }
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: blue; /* Change the color */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 6px; /* Also needed for space (tweak if needed) */
+    margin-left: -6px; /* Also needed for space (tweak if needed) */
+  }
+}
+
+
+.bg-grey {
+  background-color: #F8F8F8;
+}
+
+.wp-block-image img {
+  width: 100%;
+}
+.wpcf7 {
+  max-width: 66.6% !important;
+  margin: 0 auto;
+}
+.ayh-text-block {
+  h2, p, ul{
+    max-width: 66.6%;
+    margin: 0 auto;
+  }
+  h2{
+    margin: 0 auto 39px;
+  }
+  .wp-block-column{
+    max-width: 66.6%;
+    margin: 0 auto;
+    p{
+      max-width: unset;
+    }
+  }
+}
+
+blockquote.wp-block-quote {
+  font-weight: bold;
+  background-color: #005289;
+  padding: 74px;
+  color: #3FBEAC;
+  font-size: 32px;
+  text-transform: uppercase;
 }
