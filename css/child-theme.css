@@ -15527,6 +15527,7 @@ h2, .h2 {
   font-size: 40px;
   color: #005289;
   text-transform: uppercase;
+  margin-top: 39px;
   margin-bottom: 39px;
 }
 h1 span, .h1 span,
@@ -15614,21 +15615,22 @@ header.entry-header .header-wrapper .header-container .entry-title {
   text-align: center;
 }
 
+body.home header.entry-header {
+  display: none;
+}
+
 .site-main .wp-block-image img {
   width: 100%;
 }
 
 .wpcf7 {
-  max-width: 66.6% !important;
-  margin: 0 auto;
+  max-width: unset !important;
 }
 
-.ayh-text-block h2, .ayh-text-block .h2, .ayh-text-block p, .ayh-text-block ul {
-  max-width: 66.6%;
-  margin: 0 auto;
-}
-.ayh-text-block h2, .ayh-text-block .h2 {
-  margin: 0 auto 39px;
+.ayh-text-block {
+  padding-left: 176px;
+  padding-right: 176px;
+  flex: 0 1 50% !important;
 }
 .ayh-text-block .wp-block-column {
   max-width: 66.6%;
@@ -15707,6 +15709,48 @@ blockquote.wp-block-quote {
 
 .post-35 .entry-content {
   margin: 80px 110px;
+}
+
+.lift-me {
+  color: #242424;
+  width: 360px;
+  margin: 0 auto;
+  position: relative;
+  top: -140px;
+  z-index: 15;
+  font-size: 14px;
+}
+
+body.home #main {
+  position: relative;
+  top: -222px;
+  width: 100vw;
+}
+
+.wp-block-cb-carousel .slick-slide {
+  padding: 0;
+}
+
+.text-bold {
+  font-family: "Gill Sans Bold";
+}
+
+.p-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.form-control, .wpcf7 .wpcf7-validation-errors,
+.wpcf7 select,
+.wpcf7 textarea, .widget_archive select, .widget_categories select, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number], .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel], .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select, .wpcf7 textarea {
+  border-radius: 0;
+  margin-bottom: 10px;
+  padding: 13px 15px;
+}
+
+.btn-outline-primary, .wpcf7 input[type=submit] {
+  color: #fff;
+  background-color: #005289;
 }
 
 .has-blue-color,
