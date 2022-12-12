@@ -14,11 +14,12 @@ figure, figure.wp-block-image img,
 
 h1, .h1,
 h2, .h2 {
+  font-size: 64px;
+  line-height: 64px;
   font-family: 'Gill Sans Bold';
-  font-size: 40px;
   color: #005289;
   text-transform: uppercase;
-  margin-top: 39px;
+  //margin-top: 39px;
   margin-bottom: 39px;
 
   span {
@@ -52,6 +53,10 @@ input[type=button], input[type=submit], input[type=reset] {
   background-color: #F8F8F8;
 }
 
+.mb-39 {
+  margin-bottom: 39px;
+}
+
 nav#main-nav {
   z-index: 15;
   margin: 28.5px 50px;
@@ -62,7 +67,7 @@ nav#main-nav {
   }
 
   .navbar-nav {
-    font-size: 21px;
+    //font-size: 21px;
 
     .navbar-expand-md .navbar-nav .nav-link {
       padding-left: 10px;
@@ -71,6 +76,8 @@ nav#main-nav {
 
     .nav-link {
       color: #242424;
+      margin: 4px;
+      font-size: 1rem;
 
       &:focus,
       &:hover {
@@ -140,23 +147,6 @@ body.home header.entry-header {
   padding-left: 176px;
   padding-right: 176px;
   flex: 0 1 50% !important;
-  //h2, p, ul {
-  //  max-width: 66.6%;
-  //  margin: 0 auto;
-  //}
-
-  h2 {
-    //margin: 0 auto 39px;
-  }
-
-  .wp-block-column {
-    max-width: 66.6%;
-    margin: 0 auto;
-
-    p {
-      max-width: unset;
-    }
-  }
 
   ul {
     list-style: none; /* Remove default bullets */
@@ -176,7 +166,7 @@ blockquote.wp-block-quote {
   background-color: #005289;
   padding: 74px;
   color: #3FBEAC;
-  font-size: 32px;
+  font-size: 3.2rem;
   text-transform: uppercase;
   font-family: 'Gill Sans Bold';
 }
@@ -184,20 +174,21 @@ blockquote.wp-block-quote {
 #newsletter {
   background-color: #3FBEAC;
   color: #fff;
-  font-size: 25px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  font-size: 2.5rem;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
 
   .newsletter-wrapper {
-    width: 66.6%;
-    margin: 0 auto;
+    padding-left: 176px;
+    padding-right: 176px;
     display: flex;
+    align-items: center;
   }
 
   .newsletter-text-big {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 4rem;
+    line-height: 4rem;
     font-family: 'Gill Sans Bold';
     color: #fff;
 
@@ -214,7 +205,7 @@ blockquote.wp-block-quote {
   .newsletter-form {
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    width: 600px;
   }
 }
 
@@ -225,7 +216,10 @@ blockquote.wp-block-quote {
 
 #wrapper-footer {
   color: #fff;
-  background-color: #3FBEAC;
+  background-color: #3fbeac;
+  padding-bottom: 19px;
+  padding-top: 19px;
+  font-size: 1.1rem;
 }
 
 .post-35 .entry-content {
@@ -237,7 +231,7 @@ blockquote.wp-block-quote {
   width: 360px;
   margin: 0 auto;
   position: relative;
-  top: -140px;
+  top: -240px;
   z-index: 15;
   font-size: 14px;
 }
@@ -262,13 +256,108 @@ body.home #main {
   padding-bottom: 60px;
 }
 
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.mb-84 {
+  margin-bottom: 84px;
+}
+
 .form-control, .widget_archive select, .widget_categories select, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number], .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel], .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select, .wpcf7 textarea {
   border-radius: 0;
   margin-bottom: 10px;
   padding: 13px 15px;
+  font-size: 1.18rem;
 }
 
 .btn-outline-primary, .wpcf7 input[type=submit] {
   color: #fff;
   background-color: #005289;
+}
+
+.post-type-archive-portfolio {
+  .page-header {
+    display: none;
+  }
+}
+
+#doctors-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  article {
+    flex: 1 0 21%;
+    margin: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    img {
+      width: 100%;
+      border: 1px solid #005289;
+      margin-bottom: 25px;
+    }
+
+    .entry-title {
+      font-size: 17px;
+      margin-bottom: 16px;
+    }
+
+    .doctor-category, .doctor-nationality {
+      font-size: 14px;
+      color: #B7B7B7;
+      margin-bottom: 15px;
+
+      .dashicons {
+        font-size: 14px;
+        width: auto;
+      }
+    }
+
+    .read-more {
+      border-radius: 0px;
+      padding: 11px 31px;
+    }
+  }
+
+}
+
+.home-gallery.wp-block-gallery.wp-block-gallery-15 {
+  gap: 40px;
+
+  figure.wp-block-image:not(#individual-image) {
+    width: calc(33.33% - 40px * 0.66667);
+  }
+}
+
+.lang-search-social-menu {
+  font-size: 11px;
+
+  .lang {
+    margin-right: 10px;
+  }
+
+  .search {
+    margin-right: 30px;
+  }
+
+  .social-icon {
+    background: black;
+    border-radius: 50%;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 11px;
+  }
 }

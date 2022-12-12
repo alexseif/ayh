@@ -13,6 +13,9 @@
   src: url('../fonts/Gill Sans Bold.otf') format('opentype');
 }
 
+$font-size-base: 1.6rem;
+$nav-link-font-size: 1rem;
+
 $blue: #005289; // Thats a sample how you could change a BootStrap variable.
 $green: #3FBEAC;
 $primary: $blue; // Once we've changed the value, we'll also make it the primary brand color.

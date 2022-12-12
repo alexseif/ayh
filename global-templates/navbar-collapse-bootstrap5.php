@@ -12,34 +12,39 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md " aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-md "
+     aria-labelledby="main-nav-label">
 
-	<h2 id="main-nav-label" class="screen-reader-text">
-		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-	</h2>
+    <h2 id="main-nav-label" class="screen-reader-text">
+		<?php
+		esc_html_e( 'Main Navigation', 'understrap' ); ?>
+    </h2>
 
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+    <div class="<?php
+	echo esc_attr( $container ); ?>">
 
-		<!-- Your site branding in the menu -->
-		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
+        <!-- Your site branding in the menu -->
+		<?php
+		get_template_part( 'global-templates/navbar-branding' ); ?>
 
-		<button
-			class="navbar-toggler"
-			type="button"
-			data-bs-toggle="collapse"
-			data-bs-target="#navbarNavDropdown"
-			aria-controls="navbarNavDropdown"
-			aria-expanded="false"
-			aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
-		>
-			<span class="navbar-toggler-icon"></span>
-		</button>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="<?php
+				esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- The WordPress Menu goes here -->
+        <!-- The WordPress Menu goes here -->
 		<?php
 		wp_nav_menu(
-			array(
+			[
 				'theme_location'  => 'primary',
 				'container_class' => 'collapse navbar-collapse',
 				'container_id'    => 'navbarNavDropdown',
@@ -48,10 +53,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				'menu_id'         => 'main-menu',
 				'depth'           => 2,
 				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-			)
+			]
 		);
 		?>
+        <div class="d-flex lang-search-social-menu">
+            <span class="lang">E/ع</span>
+            <span class="search dashicons dashicons-search"></span>
+            <span class="social-icon dashicons dashicons-linkedin"></span>
+            <span class="social-icon dashicons dashicons-twitter"></span>
+            <span class="social-icon dashicons dashicons-facebook-alt"></span>
+        </div>
 
-	</div><!-- .container(-fluid) -->
+    </div><!-- .container(-fluid) -->
 
 </nav><!-- #main-nav -->
