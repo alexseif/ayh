@@ -149,6 +149,24 @@ nav#main-nav {
   }
 }
 
+.dropdown-menu {
+  border-radius: 0;
+
+
+    .dropdown-item {
+      color: #B7B7B7;
+      border-bottom: 1px solid #B7B7B7;
+      width: 90%;
+      margin-left: 5%;
+  }
+  li:last-child{
+    .dropdown-item{
+      border: none;
+    }
+  }
+
+}
+
 header.entry-header {
   .header-hidden {
     visibility: hidden;
@@ -296,6 +314,8 @@ blockquote.wp-block-quote {
 #wrapper-footer-full {
 
   .footer-wrapper {
+    padding-left: 178px;
+    padding-right: 130px;
     padding-top: 78px;
     font-size: 23px;
 
@@ -523,15 +543,70 @@ blockquote.wp-block-quote {
   }
 }
 
+.slick-prev {
+  &:before {
+    content: '\2039';
+    font-size: 54px;
+  }
+}
+
+.slick-next {
+  &:before {
+    content: '\203A';
+    font-size: 54px;
+  }
+}
+
 body.home {
   header.entry-header {
     display: none;
   }
 
+
   #main {
     position: relative;
     top: -222px;
     width: 100vw;
+  }
+
+  .home-slider {
+    .slick-prev {
+      top: 81%;
+      right: 11%;
+      left: auto;
+
+      &:before {
+        content: '\2039';
+        font-size: 54px;
+      }
+    }
+
+    .slick-next {
+      top: 81%;
+      left: auto;
+      right: 9%;
+
+      &:before {
+        content: '\203A';
+        font-size: 54px;
+      }
+    }
+
+    .wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+      margin-left: 8%;
+      width: 33%;
+
+      h2 {
+        font-size: 64px !important;
+        margin-top: 37%;
+      }
+
+      .wp-element-button {
+        width: 242px;
+        font-size: 21px !important;
+        padding: 13px !important;
+      }
+    }
   }
 
   .why-alyousif {
@@ -588,6 +663,10 @@ body.home {
         figcaption {
           font-size: 22px;
           color: #005289;
+          text-align: center;
+          margin-top: 35px;
+          font-weight: bold;
+          line-height: 22px;
         }
       }
 
@@ -641,6 +720,7 @@ body.home {
         .wp-block-latest-posts__post-title {
           color: #005289;
           font: normal normal 600 32px/32px "Gill Sans";
+          text-decoration: none;
         }
 
         .wp-block-latest-posts__post-excerpt {
@@ -686,7 +766,7 @@ body.home {
   .insurance {
     padding-top: 239px;
 
-    h2{
+    h2 {
       margin-bottom: 146px;
     }
   }
@@ -698,5 +778,16 @@ body.home {
   figure.wp-block-image:not(#individual-image) {
     width: calc(31.33% - 40px * 0.66667);
     flex-grow: 0;
+  }
+}
+
+.insurance-grid {
+  figcaption.wp-element-caption {
+    text-align: center;
+    color: #005289;
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 54px;
+    font-weight: bold;
   }
 }

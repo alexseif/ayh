@@ -15851,6 +15851,19 @@ nav#main-nav .lang-search-social-menu .search {
   font-size: 2rem;
   line-height: 1.5rem;
 }
+.dropdown-menu {
+  border-radius: 0;
+}
+.dropdown-menu .dropdown-item {
+  color: #B7B7B7;
+  border-bottom: 1px solid #B7B7B7;
+  width: 90%;
+  margin-left: 5%;
+}
+.dropdown-menu li:last-child .dropdown-item {
+  border: none;
+}
+
 header.entry-header .header-hidden {
   visibility: hidden;
 }
@@ -15975,6 +15988,8 @@ blockquote.wp-block-quote {
 }
 
 #wrapper-footer-full .footer-wrapper {
+  padding-left: 178px;
+  padding-right: 130px;
   padding-top: 78px;
   font-size: 23px;
 }
@@ -16197,6 +16212,16 @@ blockquote.wp-block-quote {
   line-height: 72px;
 }
 
+.slick-prev:before {
+  content: "‹";
+  font-size: 54px;
+}
+
+.slick-next:before {
+  content: "›";
+  font-size: 54px;
+}
+
 body.home header.entry-header {
   display: none;
 }
@@ -16204,6 +16229,37 @@ body.home #main {
   position: relative;
   top: -222px;
   width: 100vw;
+}
+body.home .home-slider .slick-prev {
+  top: 81%;
+  right: 11%;
+  left: auto;
+}
+body.home .home-slider .slick-prev:before {
+  content: "‹";
+  font-size: 54px;
+}
+body.home .home-slider .slick-next {
+  top: 81%;
+  left: auto;
+  right: 9%;
+}
+body.home .home-slider .slick-next:before {
+  content: "›";
+  font-size: 54px;
+}
+body.home .home-slider .wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+  margin-left: 8%;
+  width: 33%;
+}
+body.home .home-slider .wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container h2, body.home .home-slider .wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container .h2 {
+  font-size: 64px !important;
+  margin-top: 37%;
+}
+body.home .home-slider .wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container .wp-element-button {
+  width: 242px;
+  font-size: 21px !important;
+  padding: 13px !important;
 }
 body.home .why-alyousif {
   padding-top: 10px;
@@ -16252,6 +16308,10 @@ body.home .departments .wp-block-cb-carousel .slick-slide figure {
 body.home .departments .wp-block-cb-carousel .slick-slide figure figcaption {
   font-size: 22px;
   color: #005289;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: bold;
+  line-height: 22px;
 }
 body.home .gallery {
   padding-top: 127px;
@@ -16291,6 +16351,7 @@ body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-bloc
 body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__post-title {
   color: #005289;
   font: normal normal 600 32px/32px "Gill Sans";
+  text-decoration: none;
 }
 body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__post-excerpt {
   font-size: 16px;
@@ -16334,6 +16395,15 @@ body.home .insurance h2, body.home .insurance .h2 {
 .home-gallery.wp-block-gallery.wp-block-gallery-15 figure.wp-block-image:not(#individual-image) {
   width: calc(31.33% - 26.6668px);
   flex-grow: 0;
+}
+
+.insurance-grid figcaption.wp-element-caption {
+  text-align: center;
+  color: #005289;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 54px;
+  font-weight: bold;
 }
 
 .has-blue-color,
