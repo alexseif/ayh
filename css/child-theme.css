@@ -16015,12 +16015,14 @@ blockquote.wp-block-quote {
 
 .lift-me {
   color: #242424;
-  width: 360px;
+  width: 600px;
   margin: 0 auto;
   position: relative;
-  top: -240px;
+  top: -222px;
   z-index: 15;
-  font-size: 14px;
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: bold;
 }
 
 .wp-block-cb-carousel .slick-slide {
@@ -16404,6 +16406,61 @@ body.home .insurance h2, body.home .insurance .h2 {
   line-height: 30px;
   margin-top: 54px;
   font-weight: bold;
+}
+
+.departments-carousel h2, .departments-carousel .h2 {
+  margin-bottom: 150px;
+}
+.departments-carousel .slick-slider {
+  margin-bottom: 203px;
+}
+.departments-carousel .slick-prev {
+  right: 80px;
+  left: auto;
+  top: 307px;
+}
+.departments-carousel .slick-next {
+  right: 40px;
+  top: 307px;
+}
+.departments-carousel .wp-block-cb-carousel .slick-slide {
+  margin: 0;
+}
+.departments-carousel .wp-block-cb-carousel .slick-slide figure {
+  display: flex;
+  width: 160px;
+  height: 210px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.departments-carousel .wp-block-cb-carousel .slick-slide figure figcaption {
+  font-size: 22px;
+  color: #005289;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.department-departments {
+  padding-top: 125px;
+}
+.department-departments h3, .department-departments .h3 {
+  font-family: "Gill Sans Bold";
+  font-size: 34px;
+  line-height: 1;
+  margin-top: 61px;
+  color: #3FBEAC;
+}
+.department-departments ul {
+  padding-left: 0;
+  margin-bottom: 90px;
+}
+.department-departments ul li {
+  margin-bottom: 10px;
 }
 
 .has-blue-color,
