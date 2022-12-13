@@ -15,12 +15,11 @@ figure, figure.wp-block-image img,
 h1, .h1,
 h2, .h2 {
   font-size: 64px;
-  line-height: 64px;
-  font-family: 'Gill Sans Bold';
+  line-height: 1;
+  font-family: "Gill Sans Bold";
   color: #005289;
   text-transform: uppercase;
-  //margin-top: 39px;
-  margin-bottom: 39px;
+  margin-bottom: 58px;
 
   span {
     color: #3FBEAC;
@@ -36,8 +35,8 @@ h4, .h4 {
 
 input {
   border: 0;
-  margin-bottom: 9.5px;
-  padding: 13px 15px;
+  margin-bottom: 16px;
+  padding: 20px 21px 12px;
   font-size: 21px;
 }
 
@@ -57,17 +56,35 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-bottom: 39px;
 }
 
+.mr-49 {
+  margin-right: 49px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.pl-14 {
+  padding-left: 14px;
+}
+
+.pl-24 {
+  padding-left: 24px;
+}
+
+
 nav#main-nav {
   z-index: 15;
-  margin: 28.5px 50px;
+  padding: 24px 52px;
+
 
   .navbar-brand {
-    width: 162px;
-    margin-right: 55px;
+    width: 144px;
+    margin-right: 5.75rem;
+    margin-left: 1rem;
   }
 
   .navbar-nav {
-    //font-size: 21px;
 
     .navbar-expand-md .navbar-nav .nav-link {
       padding-left: 10px;
@@ -76,8 +93,8 @@ nav#main-nav {
 
     .nav-link {
       color: #242424;
-      margin: 4px;
-      font-size: 1rem;
+      font-size: 22px;
+      padding: 20px 12px;
 
       &:focus,
       &:hover {
@@ -92,6 +109,44 @@ nav#main-nav {
     }
 
   }
+
+  .social-bar {
+    margin-left: 35px;
+    margin-right: -8px;
+
+    .nav-link {
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+
+      .dashicons::before {
+        background: black;
+        border-radius: 50%;
+        padding: 2px;
+        color: #fff;
+      }
+    }
+  }
+
+  .lang-search-social-menu {
+
+    .lang {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #242424;
+    }
+
+    .search {
+      //margin-left: 10px;
+      //margin-right: 50px;
+      font-size: 2rem;
+      line-height: 1.5rem;
+    }
+
+    .social-icon {
+
+
+    }
+  }
 }
 
 header.entry-header {
@@ -99,7 +154,7 @@ header.entry-header {
     visibility: hidden;
 
     img {
-      width: calc(100% - 676px);
+      width: calc(100% - 505px);
     }
 
   }
@@ -123,7 +178,7 @@ header.entry-header {
       .entry-title {
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 47%;
         width: 100%;
         text-align: center;
       }
@@ -131,11 +186,8 @@ header.entry-header {
   }
 }
 
-body.home header.entry-header {
-  display: none;
-}
 
-.site-main .wp-block-image img {
+.img-w-100 img {
   width: 100%;
 }
 
@@ -144,51 +196,66 @@ body.home header.entry-header {
 }
 
 .ayh-text-block {
-  padding-left: 176px;
-  padding-right: 176px;
+  padding-left: 178px;
+  padding-right: 130px;
   flex: 0 1 50% !important;
 
+  p {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 23px;
+    line-height: 33px;
+  }
+
   ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
+    padding-left: 25px;
+    font-size: 23px;
+    line-height: 35px;
+
+
     li::before {
-      content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: blue; /* Change the color */
-      display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 6px; /* Also needed for space (tweak if needed) */
-      margin-left: -6px; /* Also needed for space (tweak if needed) */
+      content: ' ';
+      display: inline-block;
+      margin-right: 12px;
+      border-radius: 50%;
+      border: 2px solid #005289;
+      width: 10px;
+      height: 10px;
     }
   }
 
 }
 
 blockquote.wp-block-quote {
-  font-weight: bold;
+  font-weight: 700;
   background-color: #005289;
-  padding: 74px;
-  color: #3FBEAC;
+  padding: 132px 178px 114px;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #3fbeac;
   font-size: 3.2rem;
   text-transform: uppercase;
-  font-family: 'Gill Sans Bold';
+  font-family: "Gill Sans Bold";
 }
 
 #newsletter {
-  background-color: #3FBEAC;
+  background-color: #3fbeac;
   color: #fff;
-  font-size: 2.5rem;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  font-size: 41px;
+  padding-top: 135px;
+  padding-bottom: 108px;
 
 
   .newsletter-wrapper {
     padding-left: 176px;
-    padding-right: 176px;
+    padding-right: 160px;
     display: flex;
-    align-items: center;
   }
 
   .newsletter-text-big {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 67px;
+    line-height: 64px;
     font-family: 'Gill Sans Bold';
     color: #fff;
 
@@ -205,7 +272,10 @@ blockquote.wp-block-quote {
   .newsletter-form {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    /* width: 607px; */
+    width: 100%;
+    padding-left: 177px;
+    padding-top: 10px;
   }
 }
 
@@ -217,9 +287,36 @@ blockquote.wp-block-quote {
 #wrapper-footer {
   color: #fff;
   background-color: #3fbeac;
-  padding-bottom: 19px;
-  padding-top: 19px;
-  font-size: 1.1rem;
+  padding-bottom: 24px;
+  padding-top: 30px;
+  font-size: 18px;
+
+}
+
+#wrapper-footer-full {
+
+  .footer-wrapper {
+    padding-top: 78px;
+    font-size: 23px;
+
+    .h4, h4 {
+      font-size: 23px;
+      line-height: 1;
+      margin-bottom: 29px;
+    }
+
+    p {
+      line-height: 1;
+      margin-bottom: 26px;
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+  .footer-logo {
+    margin-right: 234px;
+    margin-bottom: 106px;
+  }
 }
 
 .post-35 .entry-content {
@@ -234,12 +331,6 @@ blockquote.wp-block-quote {
   top: -240px;
   z-index: 15;
   font-size: 14px;
-}
-
-body.home #main {
-  position: relative;
-  top: -222px;
-  width: 100vw;
 }
 
 
@@ -331,33 +422,281 @@ body.home #main {
 
 }
 
-.home-gallery.wp-block-gallery.wp-block-gallery-15 {
-  gap: 40px;
+.our-story {
+  padding-top: 134px;
+}
 
-  figure.wp-block-image:not(#individual-image) {
-    width: calc(33.33% - 40px * 0.66667);
+.our-message {
+  padding-top: 70px;
+}
+
+.why-alyousif {
+  padding-top: 122px;
+}
+
+.our-vision {
+  padding-top: 92px;
+}
+
+.our-mision {
+  padding-top: 100px;
+}
+
+.our-values {
+  padding-top: 169px;
+
+  h3 {
+    color: #3fbeac;
+    font-family: "Gill Sans Bold";
+    font-size: 37px;
+    padding-top: 40px;
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-size: 26px;
+    margin-bottom: 34px;
+  }
+
+  .stroke:after {
+    content: ' ';
+    height: 100%;
+    width: 2px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(/wp-content/themes/alyousif/stroke.png);
   }
 }
 
-.lang-search-social-menu {
-  font-size: 11px;
+.our-capacity {
+  padding-top: 26px;
 
-  .lang {
-    margin-right: 10px;
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 0;
+    gap: 35px;
   }
 
-  .search {
-    margin-right: 30px;
+  li {
+    margin-bottom: 44px;
+    font-size: 32px;
+    line-height: 31px;
+  }
+}
+
+.book-banner {
+  .book-form {
+    padding-left: 346px;
+    padding-top: 1px;
+    padding-right: 43px;
+    padding-bottom: 6px;
+    flex: 1 0 50%;
+
+    .form-control, .widget_archive select, .widget_categories select, .wpcf7 .wpcf7-validation-errors,
+    .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime],
+    .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number],
+    .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel],
+    .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week],
+    .wpcf7 select, .wpcf7 textarea {
+      border-radius: 0;
+      margin-bottom: 14px;
+      padding: 17px 25px;
+      font-size: 20px;
+    }
+
+    .wpcf7-spinner {
+      position: absolute;
+    }
   }
 
-  .social-icon {
-    background: black;
-    border-radius: 50%;
-    padding: 2px;
-    width: 15px;
-    height: 15px;
-    color: #fff;
-    margin-right: 10px;
-    font-size: 11px;
+  .wp-block-column {
+    flex: 1 0 50%;
+
+    p {
+      font-size: 35px;
+      line-height: 72px;
+    }
+  }
+}
+
+body.home {
+  header.entry-header {
+    display: none;
+  }
+
+  #main {
+    position: relative;
+    top: -222px;
+    width: 100vw;
+  }
+
+  .why-alyousif {
+    padding-top: 10px;
+
+    p {
+      margin-bottom: 74px;
+    }
+
+    .wp-element-button {
+      border-radius: 0px;
+      background-color: #3fbeac;
+      font-size: 20px;
+      padding: 14px 74px 8px;
+      line-height: 31px;
+    }
+  }
+
+  .departments {
+    padding-top: 125px;
+
+    h2 {
+      margin-bottom: 150px;
+    }
+
+    .slick-slider {
+      margin-bottom: 203px;
+    }
+
+    .slick-prev {
+      right: 80px;
+      left: auto;
+      top: 307px;
+    }
+
+    .slick-next {
+      right: 40px;
+      top: 307px;
+    }
+
+    .wp-block-cb-carousel .slick-slide {
+      margin: 0;
+
+      figure {
+        display: flex;
+        width: 160px;
+        height: 210px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        figcaption {
+          font-size: 22px;
+          color: #005289;
+        }
+      }
+
+
+    }
+  }
+
+  .gallery {
+    padding-top: 127px;
+
+    h2 {
+      margin-bottom: 128px;
+    }
+  }
+
+  .blog {
+    padding-top: 187px;
+    margin-bottom: 60px;
+
+    h2 {
+      margin-bottom: 118px;
+    }
+
+    ul.wp-block-latest-posts__list.wp-block-latest-posts {
+      display: flex;
+      gap: 90px;
+
+      li {
+        box-shadow: 0px 3px 6px #00000029;
+        padding: 22px;
+        padding-bottom: 0;
+        width: calc(32.33333% - 80px);
+
+        &:before {
+          content: none;
+        }
+
+        .wp-block-latest-posts__featured-image {
+          margin-bottom: 38px;
+
+          a {
+            display: block;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+
+        .wp-block-latest-posts__post-title {
+          color: #005289;
+          font: normal normal 600 32px/32px "Gill Sans";
+        }
+
+        .wp-block-latest-posts__post-excerpt {
+          font-size: 16px;
+          line-height: 34px;
+
+          .understrap-read-more-link {
+            color: #3FBEAC;
+            background: none;
+            border: none;
+            font-size: 16px;
+            padding: 0;
+            margin-top: 12px;
+            text-decoration: underline;
+          }
+        }
+
+      }
+
+    }
+
+    #apbAdvancedPosts-5b986151-5 .apbGridPosts {
+      grid-gap: 15px 100px;
+
+      article {
+        box-shadow: 0px 3px 6px #00000029;
+        background-color: transparent;
+        padding: 20px;
+
+        figure {
+          background-size: cover;
+          height: 100%;
+        }
+
+        .apbPostTitle a {
+          color: #005289;
+          font: normal normal 600 18px/21px 'Gill Sans';
+        }
+      }
+    }
+  }
+
+  .insurance {
+    padding-top: 239px;
+
+    h2{
+      margin-bottom: 146px;
+    }
+  }
+}
+
+.home-gallery.wp-block-gallery.wp-block-gallery-15 {
+  gap: 64px;
+
+  figure.wp-block-image:not(#individual-image) {
+    width: calc(31.33% - 40px * 0.66667);
+    flex-grow: 0;
   }
 }

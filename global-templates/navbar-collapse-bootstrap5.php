@@ -57,11 +57,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 		);
 		?>
         <div class="d-flex lang-search-social-menu">
-            <span class="lang">E/ع</span>
-            <span class="search dashicons dashicons-search"></span>
-            <span class="social-icon dashicons dashicons-linkedin"></span>
-            <span class="social-icon dashicons dashicons-twitter"></span>
-            <span class="social-icon dashicons dashicons-facebook-alt"></span>
+            <ul class="navbar-nav">
+                <li><a href="" class="nav-link lang">E/ع</a></li>
+                <li><a href="" class="nav-link"><span
+                                class="search dashicons dashicons-search"></span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav social-bar">
+                <li><a href="" class="nav-link"><span
+                                class="dashicons dashicons-linkedin"></span></a>
+                </li>
+                <li><a href="" class="nav-link"><span
+                                class="dashicons dashicons-twitter"></span></a>
+                </li>
+                <li><a href="" class="nav-link"><span
+                                class="dashicons dashicons-facebook-alt"></span></a>
+                </li>
+            </ul>
         </div>
 
     </div><!-- .container(-fluid) -->

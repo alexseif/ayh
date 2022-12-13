@@ -131,3 +131,9 @@ function prefix_change_portfolio_labels( array $args ) {
 
 	return $args;
 }
+
+function ww_load_dashicons() {
+	wp_enqueue_style( 'dashicons' );
+}
+
+add_action( 'wp_enqueue_scripts', 'ww_load_dashicons', 999 );

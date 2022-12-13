@@ -5121,7 +5121,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #005289;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -15747,11 +15747,11 @@ figure, figure.wp-block-image img,
 h1, .h1,
 h2, .h2 {
   font-size: 64px;
-  line-height: 64px;
+  line-height: 1;
   font-family: "Gill Sans Bold";
   color: #005289;
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin-bottom: 58px;
 }
 h1 span, .h1 span,
 h2 span, .h2 span {
@@ -15767,8 +15767,8 @@ h4, .h4 {
 
 input {
   border: 0;
-  margin-bottom: 9.5px;
-  padding: 13px 15px;
+  margin-bottom: 16px;
+  padding: 20px 21px 12px;
   font-size: 21px;
 }
 
@@ -15788,13 +15788,30 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-bottom: 39px;
 }
 
+.mr-49 {
+  margin-right: 49px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.pl-14 {
+  padding-left: 14px;
+}
+
+.pl-24 {
+  padding-left: 24px;
+}
+
 nav#main-nav {
   z-index: 15;
-  margin: 28.5px 50px;
+  padding: 24px 52px;
 }
 nav#main-nav .navbar-brand {
-  width: 162px;
-  margin-right: 55px;
+  width: 144px;
+  margin-right: 5.75rem;
+  margin-left: 1rem;
 }
 nav#main-nav .navbar-nav .navbar-expand-md .navbar-nav .nav-link {
   padding-left: 10px;
@@ -15802,8 +15819,8 @@ nav#main-nav .navbar-nav .navbar-expand-md .navbar-nav .nav-link {
 }
 nav#main-nav .navbar-nav .nav-link {
   color: #242424;
-  margin: 4px;
-  font-size: 1rem;
+  font-size: 22px;
+  padding: 20px 12px;
 }
 nav#main-nav .navbar-nav .nav-link:focus, nav#main-nav .navbar-nav .nav-link:hover {
   color: #3FBEAC;
@@ -15811,12 +15828,34 @@ nav#main-nav .navbar-nav .nav-link:focus, nav#main-nav .navbar-nav .nav-link:hov
 nav#main-nav .navbar-nav .active .nav-link {
   color: #3FBEAC;
 }
-
+nav#main-nav .social-bar {
+  margin-left: 35px;
+  margin-right: -8px;
+}
+nav#main-nav .social-bar .nav-link {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+nav#main-nav .social-bar .nav-link .dashicons::before {
+  background: black;
+  border-radius: 50%;
+  padding: 2px;
+  color: #fff;
+}
+nav#main-nav .lang-search-social-menu .lang {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #242424;
+}
+nav#main-nav .lang-search-social-menu .search {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
 header.entry-header .header-hidden {
   visibility: hidden;
 }
 header.entry-header .header-hidden img {
-  width: calc(100% - 676px);
+  width: calc(100% - 505px);
 }
 header.entry-header .header-wrapper {
   position: absolute;
@@ -15836,16 +15875,12 @@ header.entry-header .header-wrapper .header-container img {
 header.entry-header .header-wrapper .header-container .entry-title {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 47%;
   width: 100%;
   text-align: center;
 }
 
-body.home header.entry-header {
-  display: none;
-}
-
-.site-main .wp-block-image img {
+.img-w-100 img {
   width: 100%;
 }
 
@@ -15854,53 +15889,59 @@ body.home header.entry-header {
 }
 
 .ayh-text-block {
-  padding-left: 176px;
-  padding-right: 176px;
+  padding-left: 178px;
+  padding-right: 130px;
   flex: 0 1 50% !important;
+}
+.ayh-text-block p {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 23px;
+  line-height: 33px;
 }
 .ayh-text-block ul {
   list-style: none;
-  /* Remove default bullets */
+  padding-left: 25px;
+  font-size: 23px;
+  line-height: 35px;
 }
 .ayh-text-block ul li::before {
-  content: "•";
-  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: blue;
-  /* Change the color */
+  content: " ";
   display: inline-block;
-  /* Needed to add space between the bullet and the text */
-  width: 6px;
-  /* Also needed for space (tweak if needed) */
-  margin-left: -6px;
-  /* Also needed for space (tweak if needed) */
+  margin-right: 12px;
+  border-radius: 50%;
+  border: 2px solid #005289;
+  width: 10px;
+  height: 10px;
 }
 
 blockquote.wp-block-quote {
-  font-weight: bold;
+  font-weight: 700;
   background-color: #005289;
-  padding: 74px;
-  color: #3FBEAC;
+  padding: 132px 178px 114px;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #3fbeac;
   font-size: 3.2rem;
   text-transform: uppercase;
   font-family: "Gill Sans Bold";
 }
 
 #newsletter {
-  background-color: #3FBEAC;
+  background-color: #3fbeac;
   color: #fff;
-  font-size: 2.5rem;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  font-size: 41px;
+  padding-top: 135px;
+  padding-bottom: 108px;
 }
 #newsletter .newsletter-wrapper {
   padding-left: 176px;
-  padding-right: 176px;
+  padding-right: 160px;
   display: flex;
-  align-items: center;
 }
 #newsletter .newsletter-text-big {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 67px;
+  line-height: 64px;
   font-family: "Gill Sans Bold";
   color: #fff;
 }
@@ -15914,7 +15955,10 @@ blockquote.wp-block-quote {
 #newsletter .newsletter-form {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  /* width: 607px; */
+  width: 100%;
+  padding-left: 177px;
+  padding-top: 10px;
 }
 
 #wrapper-footer-full, #wrapper-static-hero {
@@ -15925,9 +15969,29 @@ blockquote.wp-block-quote {
 #wrapper-footer {
   color: #fff;
   background-color: #3fbeac;
-  padding-bottom: 19px;
-  padding-top: 19px;
-  font-size: 1.1rem;
+  padding-bottom: 24px;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+#wrapper-footer-full .footer-wrapper {
+  padding-top: 78px;
+  font-size: 23px;
+}
+#wrapper-footer-full .footer-wrapper .h4, #wrapper-footer-full .footer-wrapper h4 {
+  font-size: 23px;
+  line-height: 1;
+  margin-bottom: 29px;
+}
+#wrapper-footer-full .footer-wrapper p {
+  line-height: 1;
+  margin-bottom: 26px;
+  font-size: 22px;
+  line-height: 25px;
+}
+#wrapper-footer-full .footer-logo {
+  margin-right: 234px;
+  margin-bottom: 106px;
 }
 
 .post-35 .entry-content {
@@ -15942,12 +16006,6 @@ blockquote.wp-block-quote {
   top: -240px;
   z-index: 15;
   font-size: 14px;
-}
-
-body.home #main {
-  position: relative;
-  top: -222px;
-  width: 100vw;
 }
 
 .wp-block-cb-carousel .slick-slide {
@@ -16031,31 +16089,251 @@ body.home #main {
   padding: 11px 31px;
 }
 
-.home-gallery.wp-block-gallery.wp-block-gallery-15 {
-  gap: 40px;
-}
-.home-gallery.wp-block-gallery.wp-block-gallery-15 figure.wp-block-image:not(#individual-image) {
-  width: calc(33.33% - 26.6668px);
+.our-story {
+  padding-top: 134px;
 }
 
-.lang-search-social-menu {
-  font-size: 11px;
+.our-message {
+  padding-top: 70px;
 }
-.lang-search-social-menu .lang {
-  margin-right: 10px;
+
+.why-alyousif {
+  padding-top: 122px;
 }
-.lang-search-social-menu .search {
-  margin-right: 30px;
+
+.our-vision {
+  padding-top: 92px;
 }
-.lang-search-social-menu .social-icon {
-  background: black;
-  border-radius: 50%;
-  padding: 2px;
-  width: 15px;
-  height: 15px;
-  color: #fff;
-  margin-right: 10px;
-  font-size: 11px;
+
+.our-mision {
+  padding-top: 100px;
+}
+
+.our-values {
+  padding-top: 169px;
+}
+.our-values h3, .our-values .h3 {
+  color: #3fbeac;
+  font-family: "Gill Sans Bold";
+  font-size: 37px;
+  padding-top: 40px;
+  margin-bottom: 18px;
+}
+.our-values p {
+  font-size: 26px;
+  margin-bottom: 34px;
+}
+.our-values .stroke:after {
+  content: " ";
+  height: 100%;
+  width: 2px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(/wp-content/themes/alyousif/stroke.png);
+}
+
+.our-capacity {
+  padding-top: 26px;
+}
+.our-capacity ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  padding-left: 0;
+  gap: 35px;
+}
+.our-capacity li {
+  margin-bottom: 44px;
+  font-size: 32px;
+  line-height: 31px;
+}
+
+.book-banner .book-form {
+  padding-left: 346px;
+  padding-top: 1px;
+  padding-right: 43px;
+  padding-bottom: 6px;
+  flex: 1 0 50%;
+}
+.book-banner .book-form .form-control, .wpcf7 .book-banner .book-form .wpcf7-validation-errors, .wpcf7 .book-banner .book-form input[type=text],
+.wpcf7 .book-banner .book-form input[type=search],
+.wpcf7 .book-banner .book-form input[type=url],
+.wpcf7 .book-banner .book-form input[type=tel],
+.wpcf7 .book-banner .book-form input[type=number],
+.wpcf7 .book-banner .book-form input[type=range],
+.wpcf7 .book-banner .book-form input[type=date],
+.wpcf7 .book-banner .book-form input[type=month],
+.wpcf7 .book-banner .book-form input[type=week],
+.wpcf7 .book-banner .book-form input[type=time],
+.wpcf7 .book-banner .book-form input[type=datetime],
+.wpcf7 .book-banner .book-form input[type=datetime-local],
+.wpcf7 .book-banner .book-form input[type=color],
+.wpcf7 .book-banner .book-form input[type=email],
+.wpcf7 .book-banner .book-form input[type=file],
+.wpcf7 .book-banner .book-form input[type=submit],
+.wpcf7 .book-banner .book-form select,
+.wpcf7 .book-banner .book-form textarea, .widget_categories .book-banner .book-form select,
+.widget_archive .book-banner .book-form select, .book-banner .book-form .widget_archive select, .book-banner .book-form .widget_categories select, .book-banner .book-form .wpcf7 .wpcf7-validation-errors,
+.book-banner .book-form .wpcf7 input[type=color], .book-banner .book-form .wpcf7 input[type=date], .book-banner .book-form .wpcf7 input[type=datetime-local], .book-banner .book-form .wpcf7 input[type=datetime],
+.book-banner .book-form .wpcf7 input[type=email], .book-banner .book-form .wpcf7 input[type=file], .book-banner .book-form .wpcf7 input[type=month], .book-banner .book-form .wpcf7 input[type=number],
+.book-banner .book-form .wpcf7 input[type=range], .book-banner .book-form .wpcf7 input[type=search], .book-banner .book-form .wpcf7 input[type=submit], .book-banner .book-form .wpcf7 input[type=tel],
+.book-banner .book-form .wpcf7 input[type=text], .book-banner .book-form .wpcf7 input[type=time], .book-banner .book-form .wpcf7 input[type=url], .book-banner .book-form .wpcf7 input[type=week],
+.book-banner .book-form .wpcf7 select, .book-banner .book-form .wpcf7 textarea {
+  border-radius: 0;
+  margin-bottom: 14px;
+  padding: 17px 25px;
+  font-size: 20px;
+}
+.book-banner .book-form .wpcf7-spinner {
+  position: absolute;
+}
+.book-banner .wp-block-column {
+  flex: 1 0 50%;
+}
+.book-banner .wp-block-column p {
+  font-size: 35px;
+  line-height: 72px;
+}
+
+body.home header.entry-header {
+  display: none;
+}
+body.home #main {
+  position: relative;
+  top: -222px;
+  width: 100vw;
+}
+body.home .why-alyousif {
+  padding-top: 10px;
+}
+body.home .why-alyousif p {
+  margin-bottom: 74px;
+}
+body.home .why-alyousif .wp-element-button {
+  border-radius: 0px;
+  background-color: #3fbeac;
+  font-size: 20px;
+  padding: 14px 74px 8px;
+  line-height: 31px;
+}
+body.home .departments {
+  padding-top: 125px;
+}
+body.home .departments h2, body.home .departments .h2 {
+  margin-bottom: 150px;
+}
+body.home .departments .slick-slider {
+  margin-bottom: 203px;
+}
+body.home .departments .slick-prev {
+  right: 80px;
+  left: auto;
+  top: 307px;
+}
+body.home .departments .slick-next {
+  right: 40px;
+  top: 307px;
+}
+body.home .departments .wp-block-cb-carousel .slick-slide {
+  margin: 0;
+}
+body.home .departments .wp-block-cb-carousel .slick-slide figure {
+  display: flex;
+  width: 160px;
+  height: 210px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+body.home .departments .wp-block-cb-carousel .slick-slide figure figcaption {
+  font-size: 22px;
+  color: #005289;
+}
+body.home .gallery {
+  padding-top: 127px;
+}
+body.home .gallery h2, body.home .gallery .h2 {
+  margin-bottom: 128px;
+}
+body.home .blog {
+  padding-top: 187px;
+  margin-bottom: 60px;
+}
+body.home .blog h2, body.home .blog .h2 {
+  margin-bottom: 118px;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts {
+  display: flex;
+  gap: 90px;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li {
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 22px;
+  padding-bottom: 0;
+  width: calc(32.33333% - 80px);
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li:before {
+  content: none;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__featured-image {
+  margin-bottom: 38px;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__featured-image a {
+  display: block;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__featured-image a img {
+  width: 100%;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__post-title {
+  color: #005289;
+  font: normal normal 600 32px/32px "Gill Sans";
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__post-excerpt {
+  font-size: 16px;
+  line-height: 34px;
+}
+body.home .blog ul.wp-block-latest-posts__list.wp-block-latest-posts li .wp-block-latest-posts__post-excerpt .understrap-read-more-link {
+  color: #3FBEAC;
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12px;
+  text-decoration: underline;
+}
+body.home .blog #apbAdvancedPosts-5b986151-5 .apbGridPosts {
+  grid-gap: 15px 100px;
+}
+body.home .blog #apbAdvancedPosts-5b986151-5 .apbGridPosts article {
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: transparent;
+  padding: 20px;
+}
+body.home .blog #apbAdvancedPosts-5b986151-5 .apbGridPosts article figure {
+  background-size: cover;
+  height: 100%;
+}
+body.home .blog #apbAdvancedPosts-5b986151-5 .apbGridPosts article .apbPostTitle a {
+  color: #005289;
+  font: normal normal 600 18px/21px "Gill Sans";
+}
+body.home .insurance {
+  padding-top: 239px;
+}
+body.home .insurance h2, body.home .insurance .h2 {
+  margin-bottom: 146px;
+}
+
+.home-gallery.wp-block-gallery.wp-block-gallery-15 {
+  gap: 64px;
+}
+.home-gallery.wp-block-gallery.wp-block-gallery-15 figure.wp-block-image:not(#individual-image) {
+  width: calc(31.33% - 26.6668px);
+  flex-grow: 0;
 }
 
 .has-blue-color,
