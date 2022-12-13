@@ -16454,6 +16454,10 @@ body.home .insurance h2, body.home .insurance .h2 {
   line-height: 1;
   margin-top: 61px;
   color: #3FBEAC;
+  margin-bottom: 50px;
+}
+.department-departments p {
+  margin-bottom: 80px;
 }
 .department-departments ul {
   padding-left: 0;
@@ -16461,6 +16465,232 @@ body.home .insurance h2, body.home .insurance .h2 {
 }
 .department-departments ul li {
   margin-bottom: 10px;
+}
+
+.complaints,
+.contact-us,
+.careers {
+  padding-top: 172px;
+}
+.complaints .form-control, .complaints .wpcf7 .wpcf7-validation-errors, .wpcf7 .complaints .wpcf7-validation-errors, .complaints .wpcf7 input[type=text], .wpcf7 .complaints input[type=text],
+.complaints .wpcf7 input[type=search],
+.wpcf7 .complaints input[type=search],
+.complaints .wpcf7 input[type=url],
+.wpcf7 .complaints input[type=url],
+.complaints .wpcf7 input[type=tel],
+.wpcf7 .complaints input[type=tel],
+.complaints .wpcf7 input[type=number],
+.wpcf7 .complaints input[type=number],
+.complaints .wpcf7 input[type=range],
+.wpcf7 .complaints input[type=range],
+.complaints .wpcf7 input[type=date],
+.wpcf7 .complaints input[type=date],
+.complaints .wpcf7 input[type=month],
+.wpcf7 .complaints input[type=month],
+.complaints .wpcf7 input[type=week],
+.wpcf7 .complaints input[type=week],
+.complaints .wpcf7 input[type=time],
+.wpcf7 .complaints input[type=time],
+.complaints .wpcf7 input[type=datetime],
+.wpcf7 .complaints input[type=datetime],
+.complaints .wpcf7 input[type=datetime-local],
+.wpcf7 .complaints input[type=datetime-local],
+.complaints .wpcf7 input[type=color],
+.wpcf7 .complaints input[type=color],
+.complaints .wpcf7 input[type=email],
+.wpcf7 .complaints input[type=email],
+.complaints .wpcf7 input[type=file],
+.wpcf7 .complaints input[type=file],
+.complaints .wpcf7 input[type=submit],
+.wpcf7 .complaints input[type=submit],
+.complaints .wpcf7 select,
+.wpcf7 .complaints select,
+.complaints .wpcf7 textarea,
+.wpcf7 .complaints textarea, .widget_categories .complaints select,
+.widget_archive .complaints select, .complaints .widget_archive select, .complaints .widget_categories select, .complaints .wpcf7 .wpcf7-validation-errors,
+.complaints .wpcf7 input[type=color], .complaints .wpcf7 input[type=date], .complaints .wpcf7 input[type=datetime-local], .complaints .wpcf7 input[type=datetime],
+.complaints .wpcf7 input[type=email], .complaints .wpcf7 input[type=file], .complaints .wpcf7 input[type=month], .complaints .wpcf7 input[type=number],
+.complaints .wpcf7 input[type=range], .complaints .wpcf7 input[type=search], .complaints .wpcf7 input[type=submit], .complaints .wpcf7 input[type=tel],
+.complaints .wpcf7 input[type=text], .complaints .wpcf7 input[type=time], .complaints .wpcf7 input[type=url], .complaints .wpcf7 input[type=week], .complaints .wpcf7 select,
+.complaints .wpcf7 textarea,
+.contact-us .form-control,
+.contact-us .wpcf7 .wpcf7-validation-errors,
+.wpcf7 .contact-us .wpcf7-validation-errors,
+.contact-us .wpcf7 input[type=text],
+.wpcf7 .contact-us input[type=text],
+.contact-us .wpcf7 input[type=search],
+.wpcf7 .contact-us input[type=search],
+.contact-us .wpcf7 input[type=url],
+.wpcf7 .contact-us input[type=url],
+.contact-us .wpcf7 input[type=tel],
+.wpcf7 .contact-us input[type=tel],
+.contact-us .wpcf7 input[type=number],
+.wpcf7 .contact-us input[type=number],
+.contact-us .wpcf7 input[type=range],
+.wpcf7 .contact-us input[type=range],
+.contact-us .wpcf7 input[type=date],
+.wpcf7 .contact-us input[type=date],
+.contact-us .wpcf7 input[type=month],
+.wpcf7 .contact-us input[type=month],
+.contact-us .wpcf7 input[type=week],
+.wpcf7 .contact-us input[type=week],
+.contact-us .wpcf7 input[type=time],
+.wpcf7 .contact-us input[type=time],
+.contact-us .wpcf7 input[type=datetime],
+.wpcf7 .contact-us input[type=datetime],
+.contact-us .wpcf7 input[type=datetime-local],
+.wpcf7 .contact-us input[type=datetime-local],
+.contact-us .wpcf7 input[type=color],
+.wpcf7 .contact-us input[type=color],
+.contact-us .wpcf7 input[type=email],
+.wpcf7 .contact-us input[type=email],
+.contact-us .wpcf7 input[type=file],
+.wpcf7 .contact-us input[type=file],
+.contact-us .wpcf7 input[type=submit],
+.wpcf7 .contact-us input[type=submit],
+.contact-us .wpcf7 select,
+.wpcf7 .contact-us select,
+.contact-us .wpcf7 textarea,
+.wpcf7 .contact-us textarea,
+.widget_categories .contact-us select,
+.widget_archive .contact-us select,
+.contact-us .widget_archive select,
+.contact-us .widget_categories select,
+.contact-us .wpcf7 .wpcf7-validation-errors,
+.contact-us .wpcf7 input[type=color],
+.contact-us .wpcf7 input[type=date],
+.contact-us .wpcf7 input[type=datetime-local],
+.contact-us .wpcf7 input[type=datetime],
+.contact-us .wpcf7 input[type=email],
+.contact-us .wpcf7 input[type=file],
+.contact-us .wpcf7 input[type=month],
+.contact-us .wpcf7 input[type=number],
+.contact-us .wpcf7 input[type=range],
+.contact-us .wpcf7 input[type=search],
+.contact-us .wpcf7 input[type=submit],
+.contact-us .wpcf7 input[type=tel],
+.contact-us .wpcf7 input[type=text],
+.contact-us .wpcf7 input[type=time],
+.contact-us .wpcf7 input[type=url],
+.contact-us .wpcf7 input[type=week],
+.contact-us .wpcf7 select,
+.contact-us .wpcf7 textarea,
+.careers .form-control,
+.careers .wpcf7 .wpcf7-validation-errors,
+.wpcf7 .careers .wpcf7-validation-errors,
+.careers .wpcf7 input[type=text],
+.wpcf7 .careers input[type=text],
+.careers .wpcf7 input[type=search],
+.wpcf7 .careers input[type=search],
+.careers .wpcf7 input[type=url],
+.wpcf7 .careers input[type=url],
+.careers .wpcf7 input[type=tel],
+.wpcf7 .careers input[type=tel],
+.careers .wpcf7 input[type=number],
+.wpcf7 .careers input[type=number],
+.careers .wpcf7 input[type=range],
+.wpcf7 .careers input[type=range],
+.careers .wpcf7 input[type=date],
+.wpcf7 .careers input[type=date],
+.careers .wpcf7 input[type=month],
+.wpcf7 .careers input[type=month],
+.careers .wpcf7 input[type=week],
+.wpcf7 .careers input[type=week],
+.careers .wpcf7 input[type=time],
+.wpcf7 .careers input[type=time],
+.careers .wpcf7 input[type=datetime],
+.wpcf7 .careers input[type=datetime],
+.careers .wpcf7 input[type=datetime-local],
+.wpcf7 .careers input[type=datetime-local],
+.careers .wpcf7 input[type=color],
+.wpcf7 .careers input[type=color],
+.careers .wpcf7 input[type=email],
+.wpcf7 .careers input[type=email],
+.careers .wpcf7 input[type=file],
+.wpcf7 .careers input[type=file],
+.careers .wpcf7 input[type=submit],
+.wpcf7 .careers input[type=submit],
+.careers .wpcf7 select,
+.wpcf7 .careers select,
+.careers .wpcf7 textarea,
+.wpcf7 .careers textarea,
+.widget_categories .careers select,
+.widget_archive .careers select,
+.careers .widget_archive select,
+.careers .widget_categories select,
+.careers .wpcf7 .wpcf7-validation-errors,
+.careers .wpcf7 input[type=color],
+.careers .wpcf7 input[type=date],
+.careers .wpcf7 input[type=datetime-local],
+.careers .wpcf7 input[type=datetime],
+.careers .wpcf7 input[type=email],
+.careers .wpcf7 input[type=file],
+.careers .wpcf7 input[type=month],
+.careers .wpcf7 input[type=number],
+.careers .wpcf7 input[type=range],
+.careers .wpcf7 input[type=search],
+.careers .wpcf7 input[type=submit],
+.careers .wpcf7 input[type=tel],
+.careers .wpcf7 input[type=text],
+.careers .wpcf7 input[type=time],
+.careers .wpcf7 input[type=url],
+.careers .wpcf7 input[type=week],
+.careers .wpcf7 select,
+.careers .wpcf7 textarea {
+  padding: 20px 21px;
+  line-height: 1;
+  margin-bottom: 17px;
+}
+
+#doctor-search-icon:before {
+  background-image: url("http://localhost/FES/alyousif/wp-content/themes/alyousif/feather-search.svg");
+  content: " ";
+}
+
+.doctor-filter {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+.doctor-filter a {
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #B7B7B7;
+  border-bottom: 1px solid #B7B7B7;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.doctors .doctor {
+  flex: 0 0 21%;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 20px;
+}
+.doctors .doctor h2, .doctors .doctor .h2 {
+  font-size: 29px;
+  text-transform: none;
+  line-height: 1;
+}
+.doctors .doctor figure {
+  height: 334px;
+  margin-bottom: 50px;
+}
+.doctors .doctor .meta {
+  font-size: 22px;
+  color: #B7B7B7;
+  margin-bottom: 15px;
+}
+.doctors .doctor .read-more {
+  border-radius: 0;
+  padding: 16px 49px;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: bold;
 }
 
 .has-blue-color,

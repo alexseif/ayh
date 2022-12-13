@@ -863,3 +863,77 @@ body.home {
     }
   }
 }
+
+.complaints,
+.contact-us,
+.careers {
+  padding-top: 172px;
+
+  .form-control, .widget_archive select, .widget_categories select, .wpcf7 .wpcf7-validation-errors,
+  .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime],
+  .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number],
+  .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel],
+  .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select,
+  .wpcf7 textarea {
+    padding: 20px 21px;
+    line-height: 1;
+    margin-bottom: 17px;
+  }
+}
+
+#doctor-search-icon:before {
+  background-image: url('http://localhost/FES/alyousif/wp-content/themes/alyousif/feather-search.svg');
+  content: ' ';
+}
+
+.doctor-filter {
+  padding-top: 80px;
+  padding-bottom: 200px;
+
+  a {
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #B7B7B7;
+    border-bottom: 1px solid #B7B7B7;
+    padding: 18px 20px;
+    text-align: center;
+  }
+}
+
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .doctor {
+    flex: 0 0 21%;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px;
+
+    h2 {
+      font-size: 29px;
+      text-transform: none;
+      line-height: 1;
+    }
+
+    figure {
+      height: 334px;
+      margin-bottom: 50px;
+    }
+
+    .meta {
+      font-size: 22px;
+      color: #B7B7B7;
+      margin-bottom: 15px;
+    }
+
+    .read-more {
+      border-radius: 0;
+      padding: 16px 49px;
+      font-size: 21px;
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+}
