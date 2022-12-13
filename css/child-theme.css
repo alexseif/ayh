@@ -16693,6 +16693,11 @@ body.home .insurance h2, body.home .insurance .h2 {
   font-weight: bold;
 }
 
+.meta-header {
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #005289;
