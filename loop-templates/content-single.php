@@ -34,7 +34,7 @@ the_ID(); ?>">
 	<?php
 	echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-    <div class="entry-content ayh-text-block">
+    <div class="entry-content ayh-text-block" style="padding-top: 128px;">
 
 		<?php
 		the_content();

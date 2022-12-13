@@ -938,7 +938,15 @@ body.home {
   }
 }
 
-.meta-header {
-  font-size: 25px;
-  margin-bottom: 22px;
+
+article.post {
+
+  .meta-header {
+    font-size: 25px;
+    margin-bottom: 22px;
+
+  }
+  .wp-post-image{
+    width: 100%;
+  }
 }

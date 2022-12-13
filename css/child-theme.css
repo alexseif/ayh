@@ -16693,9 +16693,12 @@ body.home .insurance h2, body.home .insurance .h2 {
   font-weight: bold;
 }
 
-.meta-header {
+article.post .meta-header {
   font-size: 25px;
   margin-bottom: 22px;
+}
+article.post .wp-post-image {
+  width: 100%;
 }
 
 .has-blue-color,

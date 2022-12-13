@@ -93,12 +93,54 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     Egypt
                                 </div>
                             </div>
+                            <div class="doctor">
+                                <div>
+                                    <figure></figure>
+                                </div>
+                                <h2>Dr Shady</h2>
+                                <div class="meta">
+                                    <span class="dashicons dashicons-tag"></span>
+                                    Anaesthesiology
+                                </div>
+                                <div class="meta">
+                                    <span class="dashicons dashicons-admin-site-alt3"></span>
+                                    Egypt
+                                </div>
+                            </div>
+                            <div class="doctor">
+                                <div>
+                                    <figure></figure>
+                                </div>
+                                <h2>Dr Shady</h2>
+                                <div class="meta">
+                                    <span class="dashicons dashicons-tag"></span>
+                                    Anaesthesiology
+                                </div>
+                                <div class="meta">
+                                    <span class="dashicons dashicons-admin-site-alt3"></span>
+                                    Egypt
+                                </div>
+                            </div>
+                            <div class="doctor">
+                                <div>
+                                    <figure></figure>
+                                </div>
+                                <h2>Dr Shady</h2>
+                                <div class="meta">
+                                    <span class="dashicons dashicons-tag"></span>
+                                    Anaesthesiology
+                                </div>
+                                <div class="meta">
+                                    <span class="dashicons dashicons-admin-site-alt3"></span>
+                                    Egypt
+                                </div>
+                            </div>
                         </div>
 						<?php
 						while ( have_posts() ) {
-							the_post();
-							get_template_part( 'loop-templates/content',
-								'doctor' );
+//							the_post();
+//							get_template_part( 'loop-templates/content',
+//								'doctor' );
 
 							// If comments are open or we have at least one comment, load up the comment template.
 							if ( comments_open() || get_comments_number() ) {
