@@ -16391,10 +16391,10 @@ body.home .insurance h2, body.home .insurance .h2 {
   margin-bottom: 146px;
 }
 
-.home-gallery.wp-block-gallery.wp-block-gallery-15 {
+.home-gallery {
   gap: 64px;
 }
-.home-gallery.wp-block-gallery.wp-block-gallery-15 figure.wp-block-image:not(#individual-image) {
+.home-gallery figure.wp-block-image:not(#individual-image) {
   width: calc(31.33% - 26.6668px);
   flex-grow: 0;
 }
