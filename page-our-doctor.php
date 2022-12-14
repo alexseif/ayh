@@ -138,9 +138,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
 						<?php
 						while ( have_posts() ) {
-//							the_post();
-//							get_template_part( 'loop-templates/content',
-//								'doctor' );
+							the_post();
+							get_template_part( 'loop-templates/content',
+								'doctor' );
 
 							// If comments are open or we have at least one comment, load up the comment template.
 							if ( comments_open() || get_comments_number() ) {
