@@ -789,10 +789,10 @@ body.home {
 }
 
 .home-gallery {
-  gap: 64px;
+  gap: 64px !important;
 
   figure.wp-block-image:not(#individual-image) {
-    width: calc(31.33% - 40px * 0.66667);
+    width: calc(31.33% - 40px * 0.66667) !important;
     flex-grow: 0;
   }
 }
@@ -923,6 +923,10 @@ body.home {
     border-bottom: 1px solid #B7B7B7;
     padding: 18px 20px;
     text-align: center;
+
+    &.active{
+      color: #3FBEAC;
+    }
   }
 }
 
@@ -930,21 +934,35 @@ body.home {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 100px;
 
   .doctor {
     flex: 0 0 21%;
     box-shadow: 0px 3px 6px #00000029;
     padding: 20px;
+    display: none;
+
+    &.show {
+      display: block;
+    }
 
     h2 {
       font-size: 29px;
       text-transform: none;
       line-height: 1;
+      a{
+        text-decoration: none;
+      }
     }
 
     figure {
       height: 334px;
       margin-bottom: 50px;
+
+      img {
+        border: 1px solid #005289;
+        width: 100%;
+      }
     }
 
     .meta {
@@ -1055,6 +1073,10 @@ article.post {
 
     li {
       margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 26px;
+      position: relative;
 
       &:before {
         font-family: 'dashicons';
@@ -1062,13 +1084,34 @@ article.post {
         content: "\f318";
         border: none;
         border-radius: unset;
-        margin-right: 16px;
+        position: absolute;
+        left: 0;
       }
 
       a {
         color: #B7B7B7;
         text-decoration: none;
       }
+    }
+  }
+
+  .wp-block-tag-cloud {
+    display: grid;
+    gap: 32px 28px;
+    grid-template-columns: 133px 133px 133px;
+
+    a {
+      display: block;
+      font-size: 22px !important;
+      text-align: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 14px 0;
+      border: 1px solid #b7b7b7;
+      color: #b7b7b7;
+      -webkit-text-decoration: #B7B7B7;
+      text-decoration: #B7B7B7;
+      border-radius: 4px;
     }
   }
 }

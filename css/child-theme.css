@@ -16406,10 +16406,10 @@ body.home .insurance h2, body.home .insurance .h2 {
 }
 
 .home-gallery {
-  gap: 64px;
+  gap: 64px !important;
 }
 .home-gallery figure.wp-block-image:not(#individual-image) {
-  width: calc(31.33% - 26.6668px);
+  width: calc(31.33% - 26.6668px) !important;
   flex-grow: 0;
 }
 
@@ -16684,25 +16684,40 @@ body.home .insurance h2, body.home .insurance .h2 {
   padding: 18px 20px;
   text-align: center;
 }
+.doctor-filter a.active {
+  color: #3FBEAC;
+}
 
 .doctors {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 100px;
 }
 .doctors .doctor {
   flex: 0 0 21%;
   box-shadow: 0px 3px 6px #00000029;
   padding: 20px;
+  display: none;
+}
+.doctors .doctor.show {
+  display: block;
 }
 .doctors .doctor h2, .doctors .doctor .h2 {
   font-size: 29px;
   text-transform: none;
   line-height: 1;
 }
+.doctors .doctor h2 a, .doctors .doctor .h2 a {
+  text-decoration: none;
+}
 .doctors .doctor figure {
   height: 334px;
   margin-bottom: 50px;
+}
+.doctors .doctor figure img {
+  border: 1px solid #005289;
+  width: 100%;
 }
 .doctors .doctor .meta {
   font-size: 22px;
@@ -16792,6 +16807,10 @@ article.post .wp-post-image {
 }
 #right-sidebar ul.wp-block-categories li {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 26px;
+  position: relative;
 }
 #right-sidebar ul.wp-block-categories li:before {
   font-family: "dashicons";
@@ -16799,11 +16818,30 @@ article.post .wp-post-image {
   content: "\f318";
   border: none;
   border-radius: unset;
-  margin-right: 16px;
+  position: absolute;
+  left: 0;
 }
 #right-sidebar ul.wp-block-categories li a {
   color: #B7B7B7;
   text-decoration: none;
+}
+#right-sidebar .wp-block-tag-cloud {
+  display: grid;
+  gap: 32px 28px;
+  grid-template-columns: 133px 133px 133px;
+}
+#right-sidebar .wp-block-tag-cloud a {
+  display: block;
+  font-size: 22px !important;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 14px 0;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+  -webkit-text-decoration: #B7B7B7;
+  text-decoration: #B7B7B7;
+  border-radius: 4px;
 }
 
 .has-blue-color,
