@@ -924,7 +924,7 @@ body.home {
     padding: 18px 20px;
     text-align: center;
 
-    &.active{
+    &.active {
       color: #3FBEAC;
     }
   }
@@ -950,7 +950,8 @@ body.home {
       font-size: 29px;
       text-transform: none;
       line-height: 1;
-      a{
+
+      a {
         text-decoration: none;
       }
     }
@@ -1114,4 +1115,105 @@ article.post {
       border-radius: 4px;
     }
   }
+}
+
+.doctor-page {
+  margin-bottom: 100px;
+
+  figure {
+    width: 70%;
+    margin-right: 227px;
+
+    img {
+      width: 100%;
+      border: 1px solid #005289;
+    }
+  }
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  .meta {
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 12px;
+
+    .dashicons {
+      position: absolute;
+      left: -40px;
+      margin-left: 40px;
+      position: relative;
+    }
+  }
+
+  .entry-footer {
+    font-size: 22px;
+    margin-top: 158px;
+
+    .dashicons {
+      margin-right: 16px;
+    }
+
+    .schedule {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      margin-top: 38px;
+      margin-right: 118px;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 10px;
+      padding: 32px;
+      gap: 60px;
+
+      .day {
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+        text-align: center;
+        flex-grow: 1;
+
+        .footer,
+        .header {
+          text-transform: uppercase;
+          color: #fff;
+          background-color: #005289;
+          padding: 21px 16px 12px;
+          font-size: 16px;
+          line-height: 1;
+        }
+
+        .header {
+          border-radius: 10px 10px 0 0;
+        }
+
+        .footer {
+          border-radius: 0 0 10px 10px;
+        }
+
+        .content {
+          margin-top: 24px;
+
+          ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+              font-size: 16px;
+              line-height: 24px;
+
+              &:before {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.doctor-book {
+  padding-top: 135px;
 }

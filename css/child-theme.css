@@ -16844,6 +16844,83 @@ article.post .wp-post-image {
   border-radius: 4px;
 }
 
+.doctor-page figure {
+  width: 70%;
+  margin-right: 227px;
+}
+.doctor-page figure img {
+  width: 100%;
+  border: 1px solid #005289;
+}
+.doctor-page h1, .doctor-page .h1 {
+  margin-bottom: 25px;
+}
+.doctor-page .meta {
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 12px;
+}
+.doctor-page .meta .dashicons {
+  position: absolute;
+  left: -40px;
+  margin-left: 40px;
+  position: relative;
+}
+.doctor-page .entry-footer {
+  font-size: 22px;
+  margin-top: 158px;
+}
+.doctor-page .entry-footer .dashicons {
+  margin-right: 16px;
+}
+.doctor-page .entry-footer .schedule {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 38px;
+  margin-right: 118px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 32px;
+  gap: 60px;
+}
+.doctor-page .entry-footer .schedule .day {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+.doctor-page .entry-footer .schedule .day .footer,
+.doctor-page .entry-footer .schedule .day .header {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #005289;
+  padding: 21px 16px 12px;
+  font-size: 16px;
+  line-height: 1;
+}
+.doctor-page .entry-footer .schedule .day .header {
+  border-radius: 10px 10px 0 0;
+}
+.doctor-page .entry-footer .schedule .day .footer {
+  border-radius: 0 0 10px 10px;
+}
+.doctor-page .entry-footer .schedule .day .content {
+  margin-top: 24px;
+}
+.doctor-page .entry-footer .schedule .day .content ul {
+  padding: 0;
+  list-style: none;
+}
+.doctor-page .entry-footer .schedule .day .content ul li {
+  font-size: 16px;
+  line-height: 24px;
+}
+.doctor-page .entry-footer .schedule .day .content ul li:before {
+  content: none;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #005289;
