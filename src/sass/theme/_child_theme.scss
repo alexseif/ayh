@@ -976,3 +976,99 @@ article.post {
     width: 100%;
   }
 }
+
+.blogs {
+  padding-top: 129px;
+
+  #primary {
+    padding-right: 109px;
+  }
+
+  article {
+    border-bottom: 1px solid #B7B7B7;
+    margin-bottom: 97px;
+
+    h2 {
+      font-size: 46px;
+      margin-bottom: 25px;
+      text-transform: none;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .entry-meta {
+      color: #B7B7B7;
+      font-size: 22px;
+      margin-bottom: 32px;
+
+      span:not(.dashicons) {
+        margin-right: 20px;
+      }
+
+      a {
+        color: #B7B7B7;
+        text-decoration: none;
+      }
+    }
+
+    .wp-post-image {
+      margin-bottom: 32px;
+    }
+  }
+
+  .understrap-read-more-link {
+    margin-bottom: 80px;
+  }
+}
+
+.understrap-read-more-link {
+  margin-top: 12px;
+  padding: 14px 73px;
+  border-radius: 0;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#right-sidebar {
+  color: #B7B7B7;
+  padding-left: 50px;
+  padding-right: 30px;
+
+  h4 {
+    color: #242424;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .widget {
+    margin-bottom: 48px;
+  }
+
+  ul.wp-block-categories {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 50px;
+
+      &:before {
+        font-family: 'dashicons';
+        font-size: 18px;
+        content: "\f318";
+        border: none;
+        border-radius: unset;
+        margin-right: 16px;
+      }
+
+      a {
+        color: #B7B7B7;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -137,3 +137,24 @@ function ww_load_dashicons() {
 }
 
 add_action( 'wp_enqueue_scripts', 'ww_load_dashicons', 999 );
+
+
+function understrap_all_excerpts_get_more_link( $post_excerpt ) {
+	if ( is_admin() || ! get_the_ID() ) {
+		return $post_excerpt;
+	}
+
+	$permalink = esc_url( get_permalink( (int) get_the_ID() ) ); // @phpstan-ignore-line -- post exists
+
+	return $post_excerpt . ' ...<p><a class="btn btn-success text-white understrap-read-more-link" href="' . $permalink . '">' . __(
+			'Read More',
+			'understrap'
+		) . '<span class="screen-reader-text"> from ' . get_the_title( get_the_ID() ) . '</span></a></p>';
+
+}
+
+function my_excerpt_length( $length ) {
+	return 120;
+}
+
+add_filter( 'excerpt_length', 'my_excerpt_length' );

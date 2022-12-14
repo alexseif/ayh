@@ -8,43 +8,58 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
+<article <?php
+post_class(); ?> id="post-<?php
+the_ID(); ?>">
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	<header class="entry-header">
+    <header class="entry-header">
 
 		<?php
 		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">',
+				esc_url( get_permalink() ) ),
 			'</a></h2>'
 		);
 		?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
+		<?php
+		if ( 'post' === get_post_type() ) : ?>
 
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
+            <div class="entry-meta">
+               <span><span class="dashicons dashicons-calendar-alt"></span> <?php
+	               the_date( 'd M y' ); ?></span>
+                <span><span class="dashicons dashicons-admin-users"></span> <?php
+					the_author(); ?></span>
+                <span><span class="dashicons dashicons-tag"></span> <?php
+					the_category( ', ' ); ?></span>
 
-		<?php endif; ?>
+				<?php
+				//				understrap_posted_on(); ?>
+            </div><!-- .entry-meta -->
 
-	</header><!-- .entry-header -->
+		<?php
+		endif; ?>
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+    </header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<?php
+	echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+
+    <div class="entry-content">
 
 		<?php
 		the_excerpt();
 		understrap_link_pages();
 		?>
 
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+    <footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php
+		understrap_entry_footer(); ?>
 
-	</footer><!-- .entry-footer -->
+    </footer><!-- .entry-footer -->
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-<?php
+the_ID(); ?> -->

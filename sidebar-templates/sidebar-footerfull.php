@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?> px-0" id="footer-full-content" tabindex="-1">
 
-			<div class="row no-gutters">
+			<div class="row g-0">
 
 				<?php dynamic_sidebar( 'footerfull' ); ?>
 
