@@ -2,6 +2,10 @@
   gap: 0;
 }
 
+.skip-link {
+  visibility: hidden;
+}
+
 .wrapper {
   padding-bottom: 0;
 }
@@ -75,8 +79,15 @@ input[type=button], input[type=submit], input[type=reset] {
 
 nav#main-nav {
   z-index: 15;
-  padding: 24px 52px;
+  padding: 35px 52px;
 
+  div#navbarNavDropdown {
+    margin-top: 5px;
+  }
+
+  .lang-search-social-menu {
+    margin-top: 14px;
+  }
 
   .navbar-brand {
     width: 144px;
@@ -151,13 +162,17 @@ nav#main-nav {
 
 .dropdown-menu {
   border-radius: 0;
+  width: 160%;
 
 
   .dropdown-item {
-    color: #B7B7B7;
-    border-bottom: 1px solid #B7B7B7;
+    color: #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
     width: 90%;
-    margin-left: 5%;
+    font-size: 18px;
+    line-height: 16px;
+    margin: 0px auto;
+    padding: 11px 0 8px;
   }
 
   li:last-child {
@@ -867,7 +882,11 @@ body.home {
 .complaints,
 .contact-us,
 .careers {
-  padding-top: 172px;
+  padding-top: 146px;
+
+  .wpcf7 {
+    margin-bottom: 42px;
+  }
 
   .form-control, .widget_archive select, .widget_categories select, .wpcf7 .wpcf7-validation-errors,
   .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime],
@@ -880,6 +899,12 @@ body.home {
     margin-bottom: 17px;
   }
 }
+
+.careers,
+.complaints {
+  margin-bottom: 102px;
+}
+
 
 #doctor-search-icon:before {
   background-image: url('http://localhost/FES/alyousif/wp-content/themes/alyousif/feather-search.svg');
@@ -946,7 +971,8 @@ article.post {
     margin-bottom: 22px;
 
   }
-  .wp-post-image{
+
+  .wp-post-image {
     width: 100%;
   }
 }
